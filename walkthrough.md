@@ -81,7 +81,6 @@ The database stores:
 Design decisions:
 - No image binaries stored in database
 - Relational schema ensures structure
-- Easy migration path to PostgreSQL
 
 ---
 
@@ -130,7 +129,6 @@ The system is designed so that new features:
 
 Examples:
 
-- Switching to PostgreSQL only requires changing database configuration.
 - Adding authentication would involve adding a new model and middleware without altering detection logic.
 - Replacing SQLite with cloud storage would not affect service logic.
 
@@ -165,7 +163,6 @@ These limitations were accepted to prioritize simplicity and clarity.
 Future improvements could include:
 
 - User authentication
-- Migration to PostgreSQL
 - Redis-based caching
 - Background inference queue
 - Cloud storage for image files
